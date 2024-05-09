@@ -5,15 +5,12 @@ Cypress is a UI test case automation tool
 
 
 ## Steps to Start Running Tests for the First Time (in VSCode)
-
+Pre-Requisite: Have a running version of Node.js downloaded.
  1. Clone this repository locally.
  2. Open a powershell terminal.
- 3. Navigate to `Test-Cases` in the terminal.
- 4. Run `npm i cypress` to make sure everything is present/up-to-date.
- 5. Navigate to `.\cypress` in the terminal.
- 6. Run `node index.js --exec install`. Add `--force` to the end if needed.
- 7. Then navigate back to the `Test-Cases\cypress` folder in the terminal.
- 8. Run `npx cypress open` and the Cypress GUI should open. 
+ 3. Navigate to the repo folder (.../CypressTestCases) in the terminal.
+ 4. Run `npm i cypress` & `npm i dotenv` to make sure packages are present/up-to-date.
+ 5. Run `npx cypress open` and the Cypress GUI should open. 
  9. If you'd prefer running the tests solely in the terminal, run `npx cypress run`.
 
 
@@ -33,7 +30,7 @@ Cypress is a UI test case automation tool
 ## Creating New Test Cases
 
 ### Version 1, Within VSCode:
- 1. Navigate to `Test-Cases\cypress\e2e`.
+ 1. Navigate to `CypressTestCases\cypress\e2e`.
  2. Create a new file with this extension: `**.cy.js`
  3. Paste the following into the file:
 
@@ -50,7 +47,7 @@ Cypress is a UI test case automation tool
     (Search through Cypress GUI or front end files for asset tags.)
 
 ### Version 2, Within Cypress GUI:
- 1. Navigate to the `Test-Cases` folder in the terminal.
+ 1. Navigate to the `CypressTestCases` folder in the terminal.
  2. Run `npx cypress open`.
  3. Click **E2E Testing**. Then click "Continue" if it shows the config files.
  4. Make sure your browser is selected and then click **Start E2E Testing in *browser*** and wait until the GUI loads.
