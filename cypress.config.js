@@ -25,7 +25,7 @@ module.exports = defineConfig({
   These were not implemented due to the remote browser we are running AptixAR on. 
   The known .env file connection techniques like `process.env` can only be used on local servers.
   See reference material below for examples.
-  */
+  */ //target
   env: process.env, // takes environment variables from local .env file, See .env.example
 
   e2e: {
@@ -35,7 +35,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
 
-    baseURL: 'https://localhost:8080/',
+    baseURL: 'https://localhost:8080/', //target
     
     experimentalStudio: true, // This allows for the Magic Wand tool and other BETA Cypress tools. DO NOT REMOVE
   },
