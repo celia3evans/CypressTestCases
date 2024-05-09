@@ -21,12 +21,14 @@ module.exports = defineConfig({
 
   To add more use this syntax: 'VAR_NAME': 'CONTENTS',
 
-  Safer security techniques can be found in the "Environment-Variable-Setup" branch. 
-  These were not implemented due to the remote browser we are running AptixAR on. 
   The known .env file connection techniques like `process.env` can only be used on local servers.
   See reference material below for examples.
-  */ //target
-  env: process.env, // takes environment variables from local .env file, See .env.example
+  */
+  env: {
+    'FirstName':'Celia',
+    'LastName': 'Evans',
+    'Email':'celia.e.evans@gmail.com'
+  }, // Can't take environment variables from local .env file for remote servers.
 
   e2e: {
     excludeSpecPattern: [], // Add spec files you would like to skip over here. Ex: `excludeSpecPattern: ['**/**/specName.cy.js', '**/**/specName.cy.js'],`
@@ -35,7 +37,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
 
-    baseURL: 'https://localhost:8080/', //target
+    baseURL: 'https://celiaeevans.wixsite.com/celiaevans',
     
     experimentalStudio: true, // This allows for the Magic Wand tool and other BETA Cypress tools. DO NOT REMOVE
   },
