@@ -1,4 +1,4 @@
-describe('My Wix Site', () => {
+describe('Main Page of My Wix Site', () => {
 
   it('Main Menu Buttons', () => {
     
